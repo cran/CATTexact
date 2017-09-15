@@ -1,0 +1,9 @@
+fdd865942a0a278ebdf3d43601d2a787 *DESCRIPTION
+92b7ea873600636cc248cb071d977b72 *NAMESPACE
+9d35157e936436d25460f975ae204c30 *R/CATTexact.R
+53e70d4885367dbf9ca58e4717c7ceb5 *README.md
+24a5c33f2e0d0b37ab0c36b50f76184b *man/catt_asy.Rd
+654e7794a9948b0670832495d45d997f *man/catt_exact.Rd
+69e6e891017429e71c3a0197cd124dad *tests/testthat.R
+8ff89197d44fe340415bf609b143ec95 *tests/testthat/test_error.R
+e3fc90ab4734d919eaf681b299981086 *tests/testthat/test_pval.R
