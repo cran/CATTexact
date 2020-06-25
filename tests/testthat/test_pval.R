@@ -15,4 +15,5 @@ test_that("Output is correct when dose responses are noninteger (known bug in ea
   expect_equal(round(catt_exact(c(0,85.5,285.2,1077.4), c(51,51,51,51), c(0,2,1,1))$exact.pvalue,3),0.418)
   expect_equal(round(catt_exact(c(0,85.5,285.2,1077.4), c(51,51,51,51), c(0,2,1,1))$asymptotic.pvalue,3),0.460)
   expect_equal(round(catt_asy(c(0,85.5,285.2,1077.4), c(51,51,51,51), c(0,2,1,1))$asymptotic.pvalue,3),0.460)
+  expect_equal(round(catt_exact(c(0,0.001,0.1,1,10), c(50,50,50,50,50), c(6,8,10,11,10))$exact.pvalue,3),0.283)
 })

@@ -45,6 +45,16 @@ catt_exact <- function(dose.ratings,totals,cases) {
 
   dk <- dose.ratings
 
+  # dk <- dk/dk[2]
+  #
+  # rest <- dk - floor(dk)
+  # rest <- rest[rest>0]
+  #
+  # mult <- min(1/(prod(rest)), 1)
+  #
+  # dk <- round(dk * mult)
+
+
   ## Input checks
   if (min(as.numeric(round(c(nk,rk)) == c(nk,rk))) == 0) {
     stop("The number of totals and cases must be integer")
@@ -194,6 +204,15 @@ catt_asy <- function(dose.ratings, totals, cases) {
 
 
 .pval_exact <- function(dk, nk, rk) {
+
+  dk <- dk/dk[2]
+
+  rest <- dk - floor(dk)
+  rest <- rest[rest>0]
+
+  mult <- min(1/(prod(rest)), 10 ^ 12)
+
+  dk <- round(dk * mult)
 
   le <- length(dk)
   nodes <- vector("list", le)
